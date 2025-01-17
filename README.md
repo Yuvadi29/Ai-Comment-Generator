@@ -1,53 +1,32 @@
-# commentgenerator README
+# HOW TO USE!!!
 
-This is the README for your extension "commentgenerator". After writing up a brief description, we recommend including the following sections.
+This tool features using Ollama and VsCode together.
+![LLAMA+VScode](image.png)
 
 ## Features
 
-Describe specific features of your extension including screenshots of your extension in action. Image paths are relative to this README file.
-
-For example if there is an image subfolder under your extension project workspace:
-
-\!\[feature X\]\(images/feature-x.png\)
-
-> Tip: Many popular extensions utilize animations. This is an excellent way to show off your extension! We recommend short, focused animations that are easy to follow.
+This is basically a very simple comment generator for your project when you want to generate a comment for your file and you don't want to 😆. So let AI do it for you 🤖.
 
 ## Requirements
 
-If you have any requirements or dependencies, add a section describing those and how to install and configure them.
+1. NodeJs and npm installed
+2. A machine capable of using LLMs using Ollama  
 
-## Extension Settings
+#### Setup
 
-Include if your extension adds any VS Code settings through the `contributes.configuration` extension point.
-
-For example:
-
-This extension contributes the following settings:
-
-* `myExtension.enable`: Enable/disable this extension.
-* `myExtension.thing`: Set to `blah` to do something.
-
-## Known Issues
-
-Calling out known issues can help limit users opening duplicate issues against your extension.
-
-## Release Notes
-
-Users appreciate release notes as you update your extension.
-
-### 1.0.0
-
-Initial release of ...
-
-### 1.0.1
-
-Fixed issue #.
-
-### 1.1.0
-
-Added features X, Y, and Z.
-
----
+  1. Install Ollama for your operating systems from the Ollama's official website: https://ollama.com/download
+  2. Once it is installed, open the app or run the following command in the terminal:
+   `ollama serve`
+  3. We need a model to run now, using `ollama pull phi3.5` we pull a model from the Ollama registry.
+  4. Clone the project
+    `git clone https://github.com/Yuvadi29/Ai-Comment-Generator.git`
+    `cd commentgenerator`
+  5. Install the necessary dependencies:
+    `npm install`
+  6. Run the project in debug mode using `F5` or `CTRL + SHIFT + D`. It will open the Debug Window.
+  7. Choose the project you want to go to and then select the line you want to comment.
+  8. After selecting press `CTRL + SHIFT + P` and then choose Generate Comment.
+  9. Your comment will be generated.
 
 ## Following extension guidelines
 
@@ -55,17 +34,7 @@ Ensure that you've read through the extensions guidelines and follow the best pr
 
 * [Extension Guidelines](https://code.visualstudio.com/api/references/extension-guidelines)
 
-## Working with Markdown
+## Demo
+![Working Demo](demo.gif)
 
-You can author your README using Visual Studio Code. Here are some useful editor keyboard shortcuts:
-
-* Split the editor (`Cmd+\` on macOS or `Ctrl+\` on Windows and Linux).
-* Toggle preview (`Shift+Cmd+V` on macOS or `Shift+Ctrl+V` on Windows and Linux).
-* Press `Ctrl+Space` (Windows, Linux, macOS) to see a list of Markdown snippets.
-
-## For more information
-
-* [Visual Studio Code's Markdown Support](http://code.visualstudio.com/docs/languages/markdown)
-* [Markdown Syntax Reference](https://help.github.com/articles/markdown-basics/)
-
-**Enjoy!**
+**Do Not Forget to ⭐ the Repository if you like it!**
